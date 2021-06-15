@@ -69,6 +69,7 @@ img{
   	font-size: 2.42vw;
   	line-height: 2.91vw;
   	color: #102746;
+  	padding: 0 0 0.69vw 0;
   	position: relative;
 }
 .section__title:after{
@@ -86,6 +87,7 @@ img{
 	text-transform: uppercase;
 	text-decoration: none;	
 }
+
 
 /*header*/
 .header{
@@ -270,7 +272,6 @@ img{
 	opacity: 0.7;
 }
 .trips__title{
-	padding: 0 0 0.69vw 0;
 	margin: 0 5vw 0 0;
 }
 .trips__cards{
@@ -330,4 +331,121 @@ img{
 	width: 100%;
 	height: 100%;
 	z-index: 4;
+}
+
+/*cards with description of places*/
+.places__cards{
+	margin: 0 0 9.59vw 0;
+}
+.places__card{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5.31vw 7.45vw;
+	align-items: center;
+}
+.places__card-pic{
+	grid-column: span 1;
+}
+.places__card-des{
+	grid-column: span 1;
+}
+.places__card-des-first{
+	padding: 0 3.24vw 0 0;
+}
+.places__card-des-second{
+	padding: 0 0 0 3.24vw;
+}
+
+.des__title{
+	font-size: 2.07vw;
+	line-height: 2.76vw;
+	color: #102746;
+	margin: 0 0 5.86vw 0;
+}
+.des__subtitle{
+	color: #102746;
+	margin: 0 0 4vw 0;
+}
+.des__link{
+	background: url(../img/icon/svg/row.svg) no-repeat right center;
+	padding: 0 4.08vw 0 0;
+}
+.des__link:hover,
+.des__link:focus{
+	opacity: 0.7;
+}
+
+/*section top places*/
+.top-places{
+	margin: 0 0 9.93vw 0;
+}
+.top-places__title{
+	margin: 0 0 3.72vw 0;
+}
+.top-places__cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 3.59vw;
+	grid-row-gap: 4vw;
+}
+.top-places__card{
+	overflow:hidden;
+	position:relative;
+	margin: 0 0 3.10vw 0;
+}
+.top-places__card:after{
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3.79vw;
+	background: rgba(21, 24, 36, 0.6);
+	z-index: 2;
+}
+.top-places__card-pic{
+	object-fit: cover;
+	height: 26vw;
+}
+.top-places__card__title{
+	font-size: 1.24vw;
+	line-height: 1.66vw;
+	color: #ffffff;
+	position: absolute;
+	bottom: 1.03vw;
+	z-index: 3;
+	width: 100%;
+	padding: 0 1.72vw;
+	display: flex;
+	justify-content: space-between;
+}
+.top-card_interactive{
+	font-size: 1.10vw;
+}
+.top-card__likes{
+	margin: 0 1.72vw 0 0;
+	padding: 0 1.38vw 0 0;
+	background: url(../img/icon/svg/like-icon.svg) no-repeat right center;
+	background-size: 1.10vw;
+}
+.top-card__comments{
+	padding: 0 1.59vw 0 0;
+	background: url(../img/icon/svg/comments-icon.svg) no-repeat right center;
+	background-size: 0.97vw;
+}
+.top-places__card__subtitle{
+	color: #102746;
+	margin: 0 0 2.14vw 0;
+}
+.top-places__card__link{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 0.83vw 1.31vw;
+	background: #006DFE;
+}
+.top-places__card__link:hover,
+.top-places__card__link:focus{
+	background: #005bd4;
 }

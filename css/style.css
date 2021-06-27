@@ -1173,9 +1173,7 @@ img{
     }
     .tour__pic {
         margin-bottom: 12px;
-    }
-    .tour__pic_mob-first {
-        -ms-grid-row: -1;
+         -ms-grid-row: -1;
             grid-row-start: -1;
     }
     .tours__tour {
